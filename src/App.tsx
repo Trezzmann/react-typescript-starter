@@ -1,9 +1,10 @@
 import "./App.css";
+import Person from "./components/Person";
 
 function App() {
   return (
     <div className="App">
-      <h1>React Typescript app</h1>
+      <Person firstname="Mando" lastname="Muzz" age={23} />
     </div>
   );
 }
