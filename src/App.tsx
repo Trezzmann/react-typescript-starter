@@ -1,10 +1,10 @@
 import "./App.css";
-import Person from "./components/Person";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <Person firstname="Mando" lastname="Muzz" age={23} />
+      <Home name="Nahimana" isLoggedIn={true} messagesNumber={25} />
     </div>
   );
 }
