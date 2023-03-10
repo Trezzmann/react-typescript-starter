@@ -1,4 +1,5 @@
 import "./App.css";
+import Auth from "./components/Auth";
 import ProjectsList from "./components/projects/ProjectsList";
 import ProjectWrapper from "./components/projects/ProjectWrapper";
 
@@ -23,9 +24,7 @@ const projects = [
 function App() {
   return (
     <div className="App">
-      <ProjectWrapper>
-        <ProjectsList projects={projects} />
-      </ProjectWrapper>
+      <Auth />
     </div>
   );
 }
