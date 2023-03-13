@@ -2,6 +2,7 @@ import "./App.css";
 import Auth from "./components/Auth";
 import ProjectsList from "./components/projects/ProjectsList";
 import ProjectWrapper from "./components/projects/ProjectWrapper";
+import Todo from "./components/Todo/Todo";
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
 function App() {
   return (
     <div className="App">
-      <Auth />
+      <Todo />
     </div>
   );
 }

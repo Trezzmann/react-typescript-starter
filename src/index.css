@@ -77,3 +77,13 @@ button:focus-visible {
   border-bottom: 1px solid white;
   padding: 20px;
 }
+
+.todo-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.todos {
+  text-align: left;
+  margin-top: 16px;
+}
