@@ -4,6 +4,6 @@ export type todoType = {
 };
 
 export type actionType = {
-  type: string;
+  type: "ADD_TODO" | "REMOVE_TODO";
   payload: string | number;
 };
