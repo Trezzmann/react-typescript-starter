@@ -23,6 +23,7 @@ function Todo() {
   const inputRef = useRef<HTMLInputElement>(null!);
   const [state, dispatch] = useReducer(reducer, initialState);
   const [value, setValue] = useState("");
+
   const addTodo = () => {
     dispatch({ type: "ADD_TODO", payload: value });
     setValue("");
