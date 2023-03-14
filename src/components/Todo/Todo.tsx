@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useRef, useState } from "react";
 import { actionType, todoType } from "./Todo.types";
 
 const initialState: todoType[] = [];
@@ -20,6 +20,7 @@ const reducer = (state: typeof initialState, action: actionType) => {
 };
 
 function Todo() {
+  const inputRef = useRef<HTMLInputElement>(null!);
   const [state, dispatch] = useReducer(reducer, initialState);
   const [value, setValue] = useState("");
   const addTodo = () => {
@@ -27,11 +28,16 @@ function Todo() {
     setValue("");
   };
 
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <div>
       <h1>Todos</h1>
       <div className="todo-form">
         <input
+          ref={inputRef}
           placeholder="Shopping..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
