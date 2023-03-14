@@ -4,24 +4,18 @@ import { userContent } from "./context/UserContextProvider";
 function User() {
   const context = useContext(userContent);
 
-  const handleLogin = () => {
-    context.setUser({ name: "Mando", email: "mando@gmail.com" });
-  };
-  const handleLogout = () => {
-    context.setUser(null);
-  };
   return (
     <div>
       <div>User page</div>
       {context.user ? (
         <>
           <div>{context.user.name}</div>
-          <button onClick={handleLogout}>Logout</button>
+          <button onClick={context.logout}>Logout</button>
         </>
       ) : (
         <>
           <div>You are not logged in</div>
-          <button onClick={handleLogin}>Login</button>
+          <button onClick={context.login}>Login</button>
         </>
       )}
     </div>
