@@ -7,6 +7,7 @@ import UserContextProvider from "./components/user/context/UserContextProvider";
 import User from "./components/user/User";
 import Profile from "./components/Guard/Profile";
 import List from "./components/List";
+import RandomGender from "./components/restriction/RandomGender";
 
 // const list = ["Mando", "Trezzmann", "Armand"];
 // const list = [1, 2, 3];
@@ -20,7 +21,7 @@ function App() {
   return (
     <UserContextProvider>
       <div className="App">
-        <List list={list} handleClick={(item) => console.log(item)} />
+        <RandomGender name="Armand" isMale />
       </div>
     </UserContextProvider>
   );
