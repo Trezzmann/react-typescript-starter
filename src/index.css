@@ -87,3 +87,10 @@ button:focus-visible {
   text-align: left;
   margin-top: 16px;
 }
+
+.button-primary {
+  background-color: #535bf2;
+}
+.button-secondary {
+  background-color: #7fffd4;
+}

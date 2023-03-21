@@ -9,6 +9,7 @@ import Profile from "./components/Guard/Profile";
 import List from "./components/List";
 import RandomGender from "./components/restriction/RandomGender";
 import Toast from "./components/templateliteral/Toast";
+import Button from "./components/html/Button";
 
 // const list = ["Mando", "Trezzmann", "Armand"];
 // const list = [1, 2, 3];
@@ -22,7 +23,9 @@ function App() {
   return (
     <UserContextProvider>
       <div className="App">
-        <Toast position="center" />
+        <Button variant="primary" onClick={() => alert("clicked")}>
+          Subscribe
+        </Button>
       </div>
     </UserContextProvider>
   );
