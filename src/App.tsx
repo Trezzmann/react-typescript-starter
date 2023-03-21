@@ -8,6 +8,7 @@ import User from "./components/user/User";
 import Profile from "./components/Guard/Profile";
 import List from "./components/List";
 import RandomGender from "./components/restriction/RandomGender";
+import Toast from "./components/templateliteral/Toast";
 
 // const list = ["Mando", "Trezzmann", "Armand"];
 // const list = [1, 2, 3];
@@ -21,7 +22,7 @@ function App() {
   return (
     <UserContextProvider>
       <div className="App">
-        <RandomGender name="Armand" isMale />
+        <Toast position="center" />
       </div>
     </UserContextProvider>
   );
